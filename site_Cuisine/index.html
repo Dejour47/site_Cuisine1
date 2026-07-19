@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- Structure principale du site restaurant -->
+
+<!--   // permet l'utilisation des caracteres speciaux-->
+  <meta charset="UTF-8" />
+ <!-- // permet au site de prendre sa forme initiale meme on utilise un pc, tablette ou smartphone -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Les Goûts Délicieux | Restaurant</title>
+
+   <!-- // permet d'afficher la description du site dans le moteur de recherche -->
+  <meta name="description" content="Restaurant Les Goûts Délicieux — cuisine raffinée, réservation en ligne et commande rapide." />
+
+  <!-- //permet la connexion aux polices google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="nav-header" id="top">
+    <nav class="navbar">
+      <a href="#top" class="logo" aria-label="Accueil Les Goûts Délicieux">
+        <span class="logo-monogram">LG</span>
+        <span class="logo-text">Les Goûts<br />Délicieux</span>
+      </a>
+      <button class="burger" id="burgerBtn" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#menu">Menu</a>
+        <a href="#reservation">Réserver</a>
+        <a href="#commande">Commander</a>
+        <a href="#Admin">Admin</a>
+      </div>
+      <div class="nav-actions">
+        <button class="cart-toggle" id="cartToggle" aria-label="Voir le panier">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content" data-animate="fade-up">
+        <p class="hero-eyebrow">Cuisine créative & élégance française</p>
+        <h1 class="hero-title">Le goût qui fait <span>la différence</span></h1>
+        <p class="hero-slogan">Des plats raffinés, des produits frais et une expérience culinaire mémorable.</p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn btn-gold">Voir le menu</a>
+          <a href="#reservation" class="btn btn-outline">Réserver une table</a>
+          <a href="#commande" class="btn btn-primary">Commander maintenant</a>
+        </div>
+      </div>
+      <div class="scroll-cue">
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+    </section>
+
+    <section class="strip" aria-label="Réassurance">
+      <div class="strip-item"><i class="fa-solid fa-fork-knife"></i><span>Produits frais chaque jour</span></div>
+      <div class="strip-item"><i class="fa-solid fa-clock"></i><span>Service rapide & chaleureux</span></div>
+      <div class="strip-item"><i class="fa-solid fa-star"></i><span>Note 4.9/5 sur Google</span></div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="section-heading" data-animate="fade-up">
+        <p class="eyebrow">Notre carte</p>
+        <h2>Des saveurs à découvrir</h2>
+        <p class="section-sub">Choisissez parmi nos entrées, plats principaux, desserts et boissons.</p>
+      </div>
+
+      <div class="menu-tabs" data-animate="fade-up">
+        <button class="tab-btn active" data-category="Tous">Tous</button>
+        <button class="tab-btn" data-category="Entrées">Entrées</button>
+        <button class="tab-btn" data-category="Plats principaux">Plats principaux</button>
+        <button class="tab-btn" data-category="Desserts">Desserts</button>
+        <button class="tab-btn" data-category="Boissons">Boissons</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid">
+        <div class="menu-loading">Chargement de la carte...</div>
+      </div>
+    </section>
+
+    <section class="reservation-section" id="reservation">
+      <div class="reservation-visual" data-animate="fade-right">
+        <div class="visual-card">
+          <i class="fa-solid fa-utensils"></i>
+          <h3>Réservez votre expérience</h3>
+          <p>Profitez d’une table élégante, d’un service soigné et d’un cadre raffiné.</p>
+        </div>
+      </div>
+      <div class="reservation-form-wrap" data-animate="fade-left">
+        <h2>Réserver une table</h2>
+        <form id="reservationForm" class="app-form" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="reservationName">Nom complet</label>
+              <input id="reservationName" name="client_name" type="text" required />
+              <div class="error-msg" data-error-for="client_name"></div>
+            </div>
+            <div class="field">
+              <label for="reservationEmail">Email</label>
+              <input id="reservationEmail" name="email" type="email" required />
+              <div class="error-msg" data-error-for="email"></div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="reservationPhone">Téléphone</label>
+              <input id="reservationPhone" name="phone" type="tel" required />
+              <div class="error-msg" data-error-for="phone"></div>
+            </div>
+            <div class="field">
+              <label for="reservationGuests">Nombre de personnes</label>
+              <input id="reservationGuests" name="guests" type="number" min="1" max="12" required />
+              <div class="error-msg" data-error-for="guests"></div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="reservationDate">Date</label>
+              <input id="reservationDate" name="reservation_date" type="date" required />
+              <div class="error-msg" data-error-for="reservation_date"></div>
+            </div>
+            <div class="field">
+              <label for="reservationTime">Heure</label>
+              <input id="reservationTime" name="reservation_time" type="time" required />
+              <div class="error-msg" data-error-for="reservation_time"></div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-gold btn-block">Confirmer la réservation</button>
+          <div class="form-feedback" id="reservationFeedback" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="commande-section" id="commande">
+      <div class="commande-content" data-animate="fade-up">
+        <div class="section-heading" style="margin-bottom: 40px;">
+          <p class="eyebrow">Commande en ligne</p>
+          <h2>Composez votre panier</h2>
+          <p class="section-sub">Choisissez vos plats préférés et validez votre commande en quelques secondes.</p>
+        </div>
+
+        <div class="panier-liste" id="panierListe">
+          <div class="panier-vide">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p>Votre panier est vide.</p>
+            <p>Ajoutez un plat pour commencer.</p>
+          </div>
+        </div>
+
+        <div class="panier-total-row">
+          <span>Total</span>
+          <span id="panierTotal">0,00 €</span>
+        </div>
+
+        <form id="orderForm" class="app-form" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="orderName">Nom</label>
+              <input id="orderName" name="customer_name" type="text" required />
+              <div class="error-msg" data-error-for="customer_name"></div>
+            </div>
+            <div class="field">
+              <label for="orderEmail">Email</label>
+              <input id="orderEmail" name="customer_email" type="email" required />
+              <div class="error-msg" data-error-for="customer_email"></div>
+            </div>
+          </div>
+          <div class="field">
+            <label for="orderPhone">Téléphone</label>
+            <input id="orderPhone" name="customer_phone" type="tel" required />
+            <div class="error-msg" data-error-for="customer_phone"></div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Valider la commande</button>
+          <div class="form-feedback" id="orderFeedback" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Panier">
+    <div class="cart-drawer-header">
+      <h3><i class="fa-solid fa-bag-shopping"></i> Votre panier</h3>
+      <button type="button" id="closeCartBtn" aria-label="Fermer le panier"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="cart-drawer-body" id="cartDrawerBody">
+      <div class="panier-vide-mini">Votre panier est vide.</div>
+    </div>
+    <div class="cart-drawer-footer">
+      <div class="cart-drawer-total">
+        <span>Total</span>
+        <strong id="drawerTotal">0,00 €</strong>
+      </div>
+      <a href="#commande" class="btn btn-primary btn-block" id="goToCheckout">Voir la commande</a>
+    </div>
+  </aside>
+  <div class="cart-backdrop" id="cartBackdrop"></div>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo"><span class="logo-monogram">LG</span></div>
+        <p>Un lieu chaleureux où la cuisine raffinée rencontre l’hospitalité française.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p><i class="fa-solid fa-location-dot"></i>Rue 12 Cap-Haitien, Haiti</p>
+        <p><i class="fa-solid fa-phone"></i> +509 4378-7032/4190-7643/3274-3923</p>
+        <p><i class="fa-solid fa-envelope"></i> contact@lesgoutsdelicieux.fr</p>
+      </div>
+      <div class="footer-col">
+        <h4>Horaires</h4>
+        <p><i class="fa-solid fa-clock"></i> Lun – Ven : 11h30 – 23h00</p>
+        <p><i class="fa-solid fa-clock"></i> Sam – Dim : 12h00 – 00h00</p>
+      </div>
+      <div class="footer-col">
+        <h4>Suivez-nous</h4>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Les Goûts Délicieux — Tous droits réservés.</div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

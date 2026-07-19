@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#f3e6d7"/>
+  <rect x="40" y="40" width="720" height="420" rx="24" fill="#fff" stroke="#d8b36f" stroke-width="4"/>
+  <circle cx="400" cy="250" r="140" fill="#6d0f1a" opacity="0.95"/>
+  <path d="M280 250c0-66 54-120 120-120s120 54 120 120" fill="none" stroke="#fff" stroke-width="16" stroke-linecap="round"/>
+  <path d="M320 250h160" stroke="#fff" stroke-width="16" stroke-linecap="round"/>
+  <text x="400" y="430" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" fill="#6d0f1a">Plat du jour</text>
+</svg>

@@ -1,0 +1,388 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Soupe à l'oignon",
+      "description": "Soupe traditionnelle française gratinée",
+      "price": 8.50,
+      "category": "Plats Principaux",
+      "image_url": ""
+    },
+    {
+      "id": 2,
+      "name": "Côte de boeuf",
+      "description": "Pièce de viande premium cuite à la perfection",
+      "price": 32.00,
+      "category": "Plats Principaux",
+      "image_url": ""
+    },
+    {
+      "id": 3,
+      "name": "Poisson du jour",
+      "description": "Préparation spéciale du chef",
+      "price": 24.50,
+      "category": "Plats Principaux",
+      "image_url": ""
+    },
+    {
+      "id": 4,
+      "name": "Poulpe grillé",
+      "description": "Poulpe méditerranéen aux herbes",
+      "price": 26.00,
+      "category": "Plats Principaux",
+      "image_url": ""
+    },
+    {
+      "id": 5,
+      "name": "Homard Thermidor",
+      "description": "Homard avec sauce béchamel et champagne",
+      "price": 42.00,
+      "category": "Plats Principaux",
+      "image_url": ""
+    },
+    {
+      "id": 6,
+      "name": "Filet Mignon",
+      "description": "Filet de boeuf tendre et savoureux",
+      "price": 38.00,
+      "category": "Plats Principaux",
+      "image_url": ""
+    },
+    {
+      "id": 7,
+      "name": "Blanquette de veau",
+      "description": "Veau aux champignons et crème fraîche",
+      "price": 28.50,
+      "category": "Plats Principaux",
+      "image_url": ""
+    },
+    {
+      "id": 8,
+      "name": "Sole Meunière",
+      "description": "Sole poêlée avec beurre mousseux",
+      "price": 30.00,
+      "category": "Plats Principaux",
+      "image_url": ""
+    },
+    {
+      "id": 9,
+      "name": "Suprême de Turbot",
+      "description": "Turbot rôti aux herbes fraîches",
+      "price": 35.00,
+      "category": "Plats Principaux",
+      "image_url": ""
+    },
+    {
+      "id": 10,
+      "name": "Côte d'Agneau",
+      "description": "Agneau rôti et herbes de Provence",
+      "price": 34.00,
+      "category": "Plats Principaux",
+      "image_url": ""
+    },
+    {
+      "id": 11,
+      "name": "Crevettes Royales",
+      "description": "Crevettes sautées à l'ail et cognac",
+      "price": 29.50,
+      "category": "Plats Principaux",
+      "image_url": ""
+    },
+    {
+      "id": 12,
+      "name": "Steak Tartare",
+      "description": "Steak haché fin avec carapace d'oeufs",
+      "price": 25.00,
+      "category": "Plats Principaux",
+      "image_url": ""
+    },
+    {
+      "id": 13,
+      "name": "Fricassée de Poulet",
+      "description": "Poulet braisé à la crème et champignons",
+      "price": 22.00,
+      "category": "Plats Principaux",
+      "image_url": ""
+    },
+    {
+      "id": 14,
+      "name": "Foie Gras Poêlé",
+      "description": "Foie gras accompagné de sauce aux raisins",
+      "price": 45.00,
+      "category": "Plats Principaux",
+      "image_url": ""
+    },
+    {
+      "id": 15,
+      "name": "Ris de Veau",
+      "description": "Ris de veau braisé aux champignons",
+      "price": 38.50,
+      "category": "Plats Principaux",
+      "image_url": ""
+    },
+    {
+      "id": 16,
+      "name": "Beef Wellington",
+      "description": "Filet de boeuf en croûte feuilletée",
+      "price": 48.00,
+      "category": "Plats Principaux",
+      "image_url": ""
+    },
+    {
+      "id": 17,
+      "name": "Bouillabaisse",
+      "description": "Soupe de poisson provençale traditionnelle",
+      "price": 32.00,
+      "category": "Plats Principaux",
+      "image_url": ""
+    },
+    {
+      "id": 18,
+      "name": "Tarte Tatin",
+      "description": "Classique français aux pommes caramélisées",
+      "price": 7.50,
+      "category": "Desserts",
+      "image_url": ""
+    },
+    {
+      "id": 19,
+      "name": "Crème Brûlée",
+      "description": "Crème vanille avec sucre caramélisé",
+      "price": 6.50,
+      "category": "Desserts",
+      "image_url": ""
+    },
+    {
+      "id": 20,
+      "name": "Tiramisu",
+      "description": "Dessert italien classique",
+      "price": 6.00,
+      "category": "Desserts",
+      "image_url": ""
+    },
+    {
+      "id": 21,
+      "name": "Mousse au Chocolat",
+      "description": "Mousse légère et aérienne",
+      "price": 5.50,
+      "category": "Desserts",
+      "image_url": ""
+    },
+    {
+      "id": 22,
+      "name": "Panna Cotta",
+      "description": "Crème italienne aux framboises",
+      "price": 6.00,
+      "category": "Desserts",
+      "image_url": ""
+    },
+    {
+      "id": 23,
+      "name": "Mille-feuille",
+      "description": "Pâte feuilletée et crème pâtissière",
+      "price": 6.50,
+      "category": "Desserts",
+      "image_url": ""
+    },
+    {
+      "id": 24,
+      "name": "Clafoutis aux Cerises",
+      "description": "Clafoutis traditionnel français",
+      "price": 5.50,
+      "category": "Desserts",
+      "image_url": ""
+    },
+    {
+      "id": 25,
+      "name": "Paris-Brest",
+      "description": "Choux garni de crème mousseline",
+      "price": 7.00,
+      "category": "Desserts",
+      "image_url": ""
+    },
+    {
+      "id": 26,
+      "name": "Baba au Rhum",
+      "description": "Gâteau imbibé de sirop au rhum",
+      "price": 6.50,
+      "category": "Desserts",
+      "image_url": ""
+    },
+    {
+      "id": 27,
+      "name": "Saint-Honoré",
+      "description": "Pièce montée aux petits choux",
+      "price": 8.00,
+      "category": "Desserts",
+      "image_url": ""
+    },
+    {
+      "id": 28,
+      "name": "Soufflé au Grand Marnier",
+      "description": "Soufflé chaud et moelleux",
+      "price": 8.50,
+      "category": "Desserts",
+      "image_url": ""
+    },
+    {
+      "id": 29,
+      "name": "Éclair au Chocolat",
+      "description": "Éclair garni de crème et chocolat",
+      "price": 5.00,
+      "category": "Desserts",
+      "image_url": ""
+    },
+    {
+      "id": 30,
+      "name": "Tartelette aux Fraises",
+      "description": "Tartelette fruits frais et crème",
+      "price": 6.50,
+      "category": "Desserts",
+      "image_url": ""
+    },
+    {
+      "id": 31,
+      "name": "Eau minérale",
+      "description": "Eau pétillante 50 cl",
+      "price": 2.50,
+      "category": "Boissons",
+      "image_url": ""
+    },
+    {
+      "id": 32,
+      "name": "Vin rouge",
+      "description": "Verre de Bordeaux 2020",
+      "price": 6.00,
+      "category": "Boissons",
+      "image_url": ""
+    },
+    {
+      "id": 33,
+      "name": "Champagne",
+      "description": "Flûte de champagne Veuve Clicquot",
+      "price": 12.00,
+      "category": "Boissons",
+      "image_url": ""
+    },
+    {
+      "id": 34,
+      "name": "Vin blanc",
+      "description": "Verre de Sauvignon Blanc",
+      "price": 5.50,
+      "category": "Boissons",
+      "image_url": ""
+    },
+    {
+      "id": 35,
+      "name": "Rosé de Provence",
+      "description": "Verre de rosé frais",
+      "price": 5.50,
+      "category": "Boissons",
+      "image_url": ""
+    },
+    {
+      "id": 36,
+      "name": "Bière Artisanale",
+      "description": "Bière blonde locale",
+      "price": 4.50,
+      "category": "Boissons",
+      "image_url": ""
+    },
+    {
+      "id": 37,
+      "name": "Jus d'Orange",
+      "description": "Jus frais pressé",
+      "price": 3.50,
+      "category": "Boissons",
+      "image_url": ""
+    },
+    {
+      "id": 38,
+      "name": "Café Espresso",
+      "description": "Café court et intense",
+      "price": 2.00,
+      "category": "Boissons",
+      "image_url": ""
+    },
+    {
+      "id": 39,
+      "name": "Thé Earl Grey",
+      "description": "Thé noir aromatisé",
+      "price": 2.50,
+      "category": "Boissons",
+      "image_url": ""
+    },
+    {
+      "id": 40,
+      "name": "Cognac VSOP",
+      "description": "Cognac premium 4 cl",
+      "price": 8.00,
+      "category": "Boissons",
+      "image_url": ""
+    },
+    {
+      "id": 41,
+      "name": "Pastis",
+      "description": "Pastis anisé traditionnel",
+      "price": 5.00,
+      "category": "Boissons",
+      "image_url": ""
+    },
+    {
+      "id": 42,
+      "name": "Digestif Chartreuse",
+      "description": "Liqueur verte aux herbes",
+      "price": 6.50,
+      "category": "Boissons",
+      "image_url": ""
+    },
+    {
+      "id": 43,
+      "name": "Cider Cidre",
+      "description": "Cidre fermier normand",
+      "price": 4.00,
+      "category": "Boissons",
+      "image_url": ""
+    },
+    {
+      "id": 44,
+      "name": "Limonade Maison",
+      "description": "Limonade fraîche maison",
+      "price": 3.50,
+      "category": "Boissons",
+      "image_url": ""
+    },
+    {
+      "id": 45,
+      "name": "Milkshake à la Fraise",
+      "description": "Milkshake gourmand fraise-vanille",
+      "price": 5.50,
+      "category": "Boissons",
+      "image_url": ""
+    },
+    {
+      "id": 46,
+      "name": "Mojito",
+      "description": "Cocktail rhum menthe frais",
+      "price": 8.50,
+      "category": "Boissons",
+      "image_url": ""
+    },
+    {
+      "id": 47,
+      "name": "Margarita",
+      "description": "Cocktail Tequila Cointreau citron",
+      "price": 8.50,
+      "category": "Boissons",
+      "image_url": ""
+    },
+    {
+      "id": 48,
+      "name": "Daiquiri",
+      "description": "Cocktail rhum blanc citron",
+      "price": 8.00,
+      "category": "Boissons",
+      "image_url": ""
+    }
+  ]
+}
